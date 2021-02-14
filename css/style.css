@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body {
+    background-image: url('../images/barra.jpeg');
+    background-size: cover;
+}
+
+
+/*remover bordar dos input*/
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+a,
+label {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0c0cee;
+}
+
+#login-container {
+    background-color: #ffffff;
+    width: 400px;
+    margin: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+label,
+input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-bottom: 2px solid #0c0cee;
+}
+
+#forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #113658;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    background-color: #102264;
+    transition: .2s;
+}
+
+#social-container {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#social-container i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.fa-facebook-f {
+    background-color: #3B5998;
+}
+
+.fa-linkedin {
+    background-color: #0077b5;
+}
