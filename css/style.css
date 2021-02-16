@@ -34,8 +34,8 @@ a:hover {
     background-color: #ffffff;
     width: 400px;
     margin: auto;
-    padding: 20px 30px;
-    margin-top: 10vh;
+    padding: 20px 20px;
+    margin-top: 5vh;
     border-radius: 10px;
     text-align: center;
 }
@@ -108,4 +108,32 @@ input[type="submit"]:hover {
 
 .fa-linkedin {
     background-color: #0077b5;
+}
+
+form {
+    overflow: hidden;
+    animation-name: move;
+    animation-duration: 500ms;
+}
+
+@keyframes move {
+    from {
+        opacity: 0;
+        transform: translateX(-35%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@media(max-width: 900px) {
+    #login-container {
+        width: 90%;
+        margin-top: 10vh;
+    }
+    body {
+        background-size: auto;
+        overflow-y: hidden;
+    }
 }
